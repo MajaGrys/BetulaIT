@@ -19,7 +19,7 @@ import location from '../images/map-pin.svg';
                     Godziny otwarcia: <br />
                     Pon-Pt: 8:00-16:00
                 </div>
-                <a href="mailto:lukaszbrzoza@gmail.com"><img :src=email /> lukaszbrzoza@gmail.com</a>
+                <a href="mailto:lukaszbrzoza@gmail.com"><img :src=email /> lukaszbrzoza@gmail.com</a><br />
                 <div><img :src=phone /> +48 501 403 018</div>
             </div>
         </div>
@@ -37,6 +37,8 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px 50px;
+    line-height: 2.5;
+    padding-bottom: 80px;
 }
 
 iframe {
@@ -58,9 +60,5 @@ a {
     color: white;
     text-decoration: none;
     transition: 0.5s;
-}
-
-.contact-info > * {
-    padding: 10px 0px;
 }
 </style>
