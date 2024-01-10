@@ -1,9 +1,4 @@
 <script setup>
-// import computer from '../images/icons8-laptop-settings.gif';
-// import service from '../images/icons8-customer-support.gif';
-// import website from '../images/icons8-program.gif';
-
-// import computer from '../images/computer-161501_640.png';
 import computer from '../images/computer-2851285_1280.png';
 import service from '../images/call-center-7040784_640.png';
 import website from '../images/computer-908893_1280.png';
@@ -31,23 +26,31 @@ const servicesList = [
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 50px 20px;
   text-align: center;
   list-style: none;
 }
 
-img {
-  max-height: 300px;
-  max-width: 300px;
-  display: block;
-  margin: 0px auto 20px auto;
-}
+.card {
+  border: 1px solid var(--purple);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-grow: 1;
 
-@media screen and (max-width: 350px) {
   img {
-    max-height: 200px;
-    max-width: 200px;
+    width: 80vw;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  p {
+    padding: 20px;
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+    background-color: var(--purple);
   }
 }
 </style>
