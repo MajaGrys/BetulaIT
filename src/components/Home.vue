@@ -3,10 +3,10 @@ import arrow from '../images/arrow-right-circle.svg';
 </script>
 
 <template>
-    <section id="home">
-        <h1>Usługi informatyczne</h1>
-        <a href="#oferta" class="btn">Zobacz ofertę <img :src=arrow /></a>
-    </section>
+  <section id="home">
+      <h1>Usługi informatyczne</h1>
+      <a href="#oferta" class="btn">Zobacz ofertę <img :src=arrow /></a>
+  </section>
 </template>
 
 <style scoped>
@@ -22,14 +22,13 @@ section {
 
 h1 {
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px;
   font-size: 1.5rem;
   color: white;
 }
 
 @media (min-width: 300px) {
   h1 {
-    padding: 20px;
     font-size: 2rem;
   }
 }
