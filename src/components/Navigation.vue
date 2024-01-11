@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue';
 import computer from '../images/icons8-computer-100.png';
 import menu from '../images/menu.svg';
 
@@ -9,15 +10,19 @@ const navLinks = [
   {url: '#kontakt', name: 'Kontakt'},
 ]
 
+const navOpened = ref(false);
+
 const mobileNavToggle = () => {
-  console.log('hi')
+  window.innerWidth > 695 ? navOpened.value = false : navOpened.value = !navOpened.value
 }
+
+window.addEventListener('resize', () => { if (window.innerWidth > 695) { navOpened.value = false } });
 </script>
 
 <template>
   <nav>
     <a href="#" id="logo"><img :src=computer />Betula IT</a>
-    <div class="nav-links">
+    <div class="nav-links" :class="{mobile: navOpened}" @click="mobileNavToggle">
       <a v-for="link in navLinks" :href=link.url>{{link.name}}</a>
     </div>
     <button class="btn menu-btn" @click="mobileNavToggle"><img :src=menu /></button>
@@ -85,6 +90,39 @@ nav {
 
   .nav-links {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .mobile {
+    position: absolute;
+    top: 79px;
+    z-index: -1000;
+    width: 100%;
+    background-color: var(--nav-background);
+    box-shadow: 0px 4px 4px #41414141;
+    display: flex;
+    flex-direction: column;
+    animation: 0.5s zoomIn ease-out;
+
+    a {
+      text-align: center;
+      width: 100%;  
+    }
+  }
+}
+
+@keyframes zoomIn {
+  from { transform: translateY(-100vh) }
+  to { transform: translateY(0) }
+}
+
+@media screen and (max-height: 380px) {
+  .mobile {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 }
 </style>
