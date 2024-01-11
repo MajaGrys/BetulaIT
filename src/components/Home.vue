@@ -39,7 +39,7 @@ h1 {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (min-height: 400px) {
   h1 {
     font-size: 4rem;
   }
