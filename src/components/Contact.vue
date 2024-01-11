@@ -10,17 +10,19 @@ import location from '../images/map-pin.svg';
         <div class="section-content">
             <iframe
                 loading="lazy"
-                src="https://www.google.com/maps/embed/v1/place?q=Brokowo+14,+Polska&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                src="https://www.google.com/maps/embed/v1/place?q=Fryderyka+Chopina+24,+Kwidzyn,+Polska&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                 title="Betula IT">
             </iframe>
 
             <div class="contact-info">
-                <div><img :src=location /> Brokowo 14, 82-500 Brokowo<br />
-                    Godziny otwarcia: <br />
-                    Pon-Pt: 8:00-16:00
+                <div><img :src=location />
+                    Fryderyka Chopina 24, 82-500 Kwidzyn<br />
+                    Godziny otwarcia:<br />
+                    Pon-Pt: 8:00-16:00<br />
+                    Sob-Nd: nieczynne
                 </div>
-                <a href="mailto:lukaszbrzoza@gmail.com"><img :src=email /> lukaszbrzoza@gmail.com</a><br />
                 <div><img :src=phone /> +48 501 403 018</div>
+                <a href="mailto:lukaszbrzoza@gmail.com"><img :src=email /> lukaszbrzoza@gmail.com</a>
             </div>
         </div>
     </section>
