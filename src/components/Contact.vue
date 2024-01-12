@@ -40,6 +40,7 @@ section {
     flex-wrap: wrap;
     gap: 20px 50px;
     line-height: 2.5;
+    font-size: 1.1rem;
     padding-bottom: 80px;
 }
 
