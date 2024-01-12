@@ -1,12 +1,14 @@
 <script setup>
+import company from '../images/team-4423339_640.png';
 import computer from '../images/computer-2851285_1280.png';
+import recovery from '../images/hard-disk-42935_640.png';
 import service from '../images/call-center-7040784_640.png';
-import website from '../images/computer-908893_1280.png';
 
 const servicesList = [
-  {name: "Naprawa komputerów i drukarek", img: computer},
+  {name: "Obsługa informatyczna firm", img: company},
+  {name: "Naprawa komputerów i laptopów", img: computer},
+  {name: "Odzyskiwanie danych", img: recovery},
   {name: "Doradztwo w zakresie informatyki", img: service},
-  {name: "Zarządzanie stronami WWW", img: website},
 ];
 </script>
 
@@ -44,6 +46,7 @@ ul {
     max-width: 300px;
     margin: auto;
     padding: 20px;
+    transition: 0.5s;
   }
 
   p {
@@ -51,6 +54,10 @@ ul {
     color: white;
     border-radius: 0px 0px 20px 20px;
     background-color: var(--purple);
+  }
+
+  &:hover img {
+    transform: scale(1.1);
   }
 }
 </style>
