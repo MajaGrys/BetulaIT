@@ -90,19 +90,4 @@ h2 {
     transform: scale(1.1);
   }
 }
-
-/* h2, .section-content {
-  transform: scale(0);
-  opacity: 0;
-  animation: fade-in linear forwards;
-  animation-timeline: view(95vh 10vh);
-}
-
-#kontakt .section-content {
-  animation-timeline: view(100vh 20vh);
-}
-
-@keyframes fade-in {
-  to { transform: scale(1); opacity: 1 }
-} */
 </style>
