@@ -1,8 +1,8 @@
 <script setup>
-import company from '../images/team-4423339_640.webp';
-import computer from '../images/computer-2851285_1280.webp';
-import recovery from '../images/hard-disk-42935_640.webp';
-import service from '../images/call-center-7040784_640.webp';
+import company from '../images/obsługa-informatyczna-firm.webp';
+import computer from '../images/naprawa-komputerów.webp';
+import recovery from '../images/odzyskiwanie-danych.webp';
+import service from '../images/doradztwo.webp';
 
 const servicesList = [
   {name: "Obsługa informatyczna firm", img: company},

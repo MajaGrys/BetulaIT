@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import computer from '../images/icons8-computer-100.webp';
+import computer from '../images/komputer.webp';
 import menu from '../images/menu.svg';
 
 const navLinks = [
