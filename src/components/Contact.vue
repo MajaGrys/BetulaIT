@@ -6,20 +6,26 @@ import location from '../images/map-pin.svg';
 
 <template>
     <section id="kontakt">
-        <h2>Kontakt</h2>
+        <h2 data-aos="zoom-in-up">Kontakt</h2>
         <div class="section-content">
             <iframe
                 loading="lazy"
                 src="https://www.google.com/maps/embed/v1/place?q=Fryderyka+Chopina+24,+Kwidzyn,+Polska&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                title="Betula IT">
+                title="Betula IT"
+                data-aos="zoom-in-up">
             </iframe>
 
-            <div class="contact-info">
+            <div class="contact-info" data-aos="zoom-in-up">
                 <div><img :src=location />
                     Fryderyka Chopina 24, 82-500 Kwidzyn<br />
-                    Godziny otwarcia:<br />
-                    Pon-Pt: 8:00-16:00<br />
-                    Sob-Nd: nieczynne
+                    <table>
+                        <tr>
+                            <td>Godziny otwarcia:</td>
+                            <td>Pon-Pt: 8:00-16:00<br />
+                                Sob-Nd: nieczynne</td>
+                        </tr>
+
+                    </table>
                 </div>
                 <div><img :src=phone /> +48 501 403 018</div>
                 <a href="mailto:lukaszbrzoza@gmail.com"><img :src=email /> lukaszbrzoza@gmail.com</a>
@@ -57,6 +63,11 @@ img {
     filter: invert(1);
     height: 20px;
     transform: translateY(3px);
+}
+
+td {
+    vertical-align: top;
+    padding-left: 20px;
 }
 
 a {

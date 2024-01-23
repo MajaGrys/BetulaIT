@@ -14,9 +14,9 @@ const servicesList = [
 
 <template>
   <section id="oferta">
-    <h2>Oferta</h2>
+    <h2 data-aos="zoom-in-up">Oferta</h2>
     <ul class="section-content">
-      <li class="card" v-for="service in servicesList">
+      <li class="card" v-for="service in servicesList" data-aos="zoom-in-up">
         <img :src=service.img />
         <p>{{service.name}}</p>
       </li>
