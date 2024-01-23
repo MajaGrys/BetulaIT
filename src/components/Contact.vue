@@ -16,7 +16,7 @@ import location from '../images/map-pin.svg';
             </iframe>
 
             <div class="contact-info" data-aos="zoom-in-up">
-                <div><img :src=location />
+                <div><img :src=location alt="" />
                     Fryderyka Chopina 24, 82-500 Kwidzyn<br />
                     <div class="godziny-otwarcia">
                         <div>Godziny otwarcia:</div>
@@ -24,8 +24,8 @@ import location from '../images/map-pin.svg';
                              Sob-Nd: nieczynne</div>
                     </div>
                 </div>
-                <div><img :src=phone /> +48 501 403 018</div>
-                <a href="mailto:lukaszbrzoza@gmail.com"><img :src=email /> lukaszbrzoza@gmail.com</a>
+                <div><img :src=phone alt="" /> +48 501 403 018</div>
+                <a href="mailto:lukaszbrzoza@gmail.com"><img :src=email alt="" /> lukaszbrzoza@gmail.com</a>
             </div>
         </div>
     </section>

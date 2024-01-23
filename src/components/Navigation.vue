@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import computer from '../images/icons8-computer-100.png';
+import computer from '../images/icons8-computer-100.webp';
 import menu from '../images/menu.svg';
 
 const navLinks = [
@@ -21,7 +21,7 @@ window.addEventListener('resize', () => { if (window.innerWidth > 695) { navOpen
 
 <template>
   <nav>
-    <a href="#home" id="logo"><img :src=computer />Betula IT</a>
+    <a href="#home" id="logo"><img :src=computer alt="" />Betula IT</a>
     <div class="nav-links" :class="{mobile: navOpened}" @click="mobileNavToggle">
       <a v-for="link in navLinks" :href=link.url>{{link.name}}</a>
     </div>

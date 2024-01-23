@@ -4,15 +4,15 @@ import arrow from '../images/arrow-right-circle.svg';
 
 <template>
   <section id="home">
-      <h1 data-aos="fade-down">Usługi informatyczne</h1>
-      <a href="#oferta" class="btn" data-aos="flip-left">Zobacz ofertę <img :src=arrow /></a>
+      <h1 data-aos="fade-down" data-aos-delay="0">Usługi informatyczne</h1>
+      <a href="#oferta" class="btn" data-aos="flip-left" data-aos-delay="0">Zobacz ofertę <img :src=arrow alt="" /></a>
   </section>
 </template>
 
 <style scoped>
 section {
   height: 100vh;
-  background: url('../images/motherboard-885177.jpg') center no-repeat;
+  background: url('../images/motherboard-885177.webp') center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;

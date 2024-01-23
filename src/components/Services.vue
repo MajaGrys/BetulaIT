@@ -1,8 +1,8 @@
 <script setup>
-import company from '../images/team-4423339_640.png';
-import computer from '../images/computer-2851285_1280.png';
-import recovery from '../images/hard-disk-42935_640.png';
-import service from '../images/call-center-7040784_640.png';
+import company from '../images/team-4423339_640.webp';
+import computer from '../images/computer-2851285_1280.webp';
+import recovery from '../images/hard-disk-42935_640.webp';
+import service from '../images/call-center-7040784_640.webp';
 
 const servicesList = [
   {name: "Obsługa informatyczna firm", img: company},
@@ -17,7 +17,7 @@ const servicesList = [
     <h2 data-aos="zoom-in-up">Oferta</h2>
     <ul class="section-content">
       <li class="card" v-for="service in servicesList" data-aos="zoom-in-up">
-        <img :src=service.img />
+        <img :src=service.img alt="" />
         <p>{{service.name}}</p>
       </li>
     </ul>
