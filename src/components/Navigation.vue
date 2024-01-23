@@ -56,6 +56,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 290px) {
+  #logo img {
+    display: none;
+  }
+}
+
 .nav-links {
   display: none;
 
@@ -107,7 +113,7 @@ nav {
     position: fixed;
     top: 80px;
     width: 100%;
-    background-color: var(--nav-background);
+    background-color: var(--background);
     box-shadow: 0px 4px 4px #41414141;
     display: flex;
     flex-direction: column;
