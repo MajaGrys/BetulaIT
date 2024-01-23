@@ -60,27 +60,28 @@ html {
 
 h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 80px 0px;
 }
 
-h2:not(#kontakt > h2) {
-  color: var(--orange);
+h2::before, h2::after {
+  content: "";
+  display: inline-block;
+  width: 10vw;
+  max-width: 160px;
+  height: 3px;
+  margin: 15px 10px;
+  background-color: var(--orange-light);
 }
   
 @media screen and (min-width: 400px) {
-  h2:not(#kontakt > h2) {
-    color: var(--black);
+  h2 {
+    font-size: 3rem;
   }
-  
+
   h2::before, h2::after {
-    content: "";
-    display: inline-block;
     width: 15vw;
-    max-width: 160px;
-    height: 3px;
     margin: 15px;
-    background-color: var(--orange-light);
   }
 }
 </style>
