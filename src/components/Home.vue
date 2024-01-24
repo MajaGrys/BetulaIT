@@ -4,8 +4,8 @@ import arrow from '../images/arrow-right-circle.svg';
 
 <template>
   <section id="home">
-      <h1 data-aos="fade-down" data-aos-delay="0">Usługi informatyczne</h1>
-      <a href="#oferta" class="btn" data-aos="flip-left" data-aos-delay="0">Zobacz ofertę <img :src=arrow alt="" /></a>
+      <h1>Usługi informatyczne</h1>
+      <a href="#oferta" class="btn">Zobacz ofertę <img :src=arrow alt="" /></a>
   </section>
 </template>
 
@@ -51,10 +51,11 @@ h1 {
   padding: 15px 20px 20px 20px;
   border-radius: 30px;
   text-decoration: none;
+  transition: 0.5s;
 
   &:hover, &:focus {
     background-color: var(--orange-light);
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
