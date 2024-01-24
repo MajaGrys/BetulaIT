@@ -25,7 +25,7 @@ window.addEventListener('resize', () => { if (window.innerWidth > 695) { navOpen
     <div class="nav-links" :class="{mobile: navOpened}" @click="mobileNavToggle">
       <a v-for="link in navLinks" :href=link.url>{{link.name}}</a>
     </div>
-    <button class="menu-btn" @click="mobileNavToggle"><img :src=menu /></button>
+    <button class="menu-btn" aria-label="Otwórz nawigację" @click="mobileNavToggle"><img :src=menu alt="" /></button>
   </nav>
 </template>
 
