@@ -50,7 +50,8 @@ nav {
   text-decoration: none;
 
   img {
-    max-height: 40px;
+    height: 40px;
+    width: 40px;
     margin-right: 5px;
     transform: translateY(2px);
   }
