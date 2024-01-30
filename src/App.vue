@@ -30,7 +30,7 @@ AOS.init({
 
 :root {
   --background:#F8F8FF;
-  --purple: #30287b;
+  --purple: #3f3597;
   --orange: #db5204;
   --orange-light: #f27a35;
   --black: #2b2928;
