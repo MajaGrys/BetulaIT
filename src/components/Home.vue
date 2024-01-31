@@ -54,7 +54,6 @@ h1 {
   transition: 0.5s;
 
   &:hover, &:focus {
-    background-color: var(--orange-light);
     transform: scale(1.1);
   }
 }
