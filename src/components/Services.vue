@@ -28,18 +28,18 @@ const servicesList = [
 ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px 20px;
+  gap: 50px 30px;
   text-align: center;
   list-style: none;
 }
 
 .card {
-  border: 1px solid var(--purple);
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   flex-grow: 1;
+  box-shadow: 0px 2px 6px 2px #30287b24;
+  /* background-color: #f4f4ff; */
 
   img {
     width: 80vw;
@@ -52,12 +52,12 @@ ul {
   p {
     padding: 20px;
     color: white;
-    border-radius: 0px 0px 20px 20px;
     background-color: var(--purple);
   }
 
-  &:hover img {
-    transform: scale(1.1);
+  &:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
   }
 }
 </style>
