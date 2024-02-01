@@ -30,8 +30,8 @@ AOS.init({
 
 :root {
   --background:#F8F8FF;
-  --purple: #3f3597;
-  --orange: #db5204;
+  --purple: #4c4494;
+  --orange: #CD470A;
   --orange-light: #f27a35;
   --black: #2b2928;
   --main-font: 'Montserrat', sans-serif;
