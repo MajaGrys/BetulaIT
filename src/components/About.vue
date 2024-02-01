@@ -11,7 +11,7 @@ import sebteam from '../images/seb-team.webp';
       <img :src=building alt="siedziba firmy Betula IT" data-aos="zoom-in-up" class="building" />
       <div>
         <p data-aos="zoom-in-up"><span id="about-logo">Betula IT</span> oferuje profesjonalne usługi informatyczne dla firm w Kwidzynie i okolicach. Doświadczony zespół ekspertów zapewnia klientom sprawną i skuteczną pomoc w rozwiązywaniu problemów, a także kompleksowe wsparcie techniczne. Odpowiadamy za prawidłowe funkcjonowanie systemów informatycznych oraz wdrażanie rozwiązań dopasowanych do potrzeb i wymagań klientów.</p><br />
-        <p data-aos="zoom-in-up">Zaufali nam:<br />
+        <p data-aos="zoom-in-up">Instytucje, które nam zaufały:<br />
           <div class="logos">
             <a href="http://www.ziarnpol.pl/"><img :src=ziarnpol alt="Ziarnpol" /></a>
             <a href="https://seb-team.pl/"><img :src=sebteam alt="Seb-team" /></a>
@@ -48,8 +48,10 @@ import sebteam from '../images/seb-team.webp';
 
 .logos {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
   
   img {
     max-width: 200px;
