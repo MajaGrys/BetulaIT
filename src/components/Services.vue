@@ -38,6 +38,7 @@ ul {
   flex-direction: column;
   justify-content: end;
   flex-grow: 1;
+  border: 1px #3f35971c solid;
   box-shadow: 0px 2px 6px 2px #30287b24;
   /* background-color: #f4f4ff; */
 
@@ -53,11 +54,6 @@ ul {
     padding: 20px;
     color: white;
     background-color: var(--purple);
-  }
-
-  &:hover {
-    transform: scale(1.03);
-    transition: 0.5s;
   }
 }
 </style>
