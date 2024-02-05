@@ -2,6 +2,8 @@
 import building from '../images/betulait.webp';
 import ziarnpol from '../images/ziarnpol.webp';
 import sebteam from '../images/seb-team.webp';
+import kalinabhp from '../images/kalina-bhp.png';
+import sp2 from '../images/sp2.png';
 </script>
 
 <template>
@@ -10,11 +12,13 @@ import sebteam from '../images/seb-team.webp';
     <div class="section-content">
       <img :src=building alt="siedziba firmy Betula IT" data-aos="zoom-in-up" class="building" />
       <div>
-        <p data-aos="zoom-in-up"><span id="about-logo">Betula IT</span> oferuje profesjonalne usługi informatyczne dla firm w Kwidzynie i okolicach. Doświadczony zespół ekspertów zapewnia klientom sprawną i skuteczną pomoc w rozwiązywaniu problemów, a także kompleksowe wsparcie techniczne. Odpowiadamy za prawidłowe funkcjonowanie systemów informatycznych oraz wdrażanie rozwiązań dopasowanych do potrzeb i wymagań klientów.</p><br />
-        <p data-aos="zoom-in-up">Instytucje, które nam zaufały:<br />
+        <p data-aos="zoom-in-up">Betula IT wykonuje profesjonalne usługi informatyczne dla firm w Kwidzynie i okolicach zarówno na miejscu, jak i zdalnie. Doświadczony zespół ekspertów zapewnia klientom sprawną i skuteczną pomoc w rozwiązywaniu problemów, a także kompleksowe wsparcie techniczne. Odpowiadamy za prawidłowe funkcjonowanie systemów informatycznych oraz wdrażanie rozwiązań dopasowanych do potrzeb i wymagań klientów.</p><br />
+        <p data-aos="zoom-in-up">Instytucje, które nam zaufały<br />
           <div class="logos">
             <a href="http://www.ziarnpol.pl/"><img :src=ziarnpol alt="Ziarnpol" /></a>
             <a href="https://seb-team.pl/"><img :src=sebteam alt="Seb-team" /></a>
+            <a href="https://bhp-kwidzyn.pl/"><img :src=kalinabhp alt="Kalina Usługi BHP" /></a>
+            <a href="https://www.sp2.kwidzyn.pl/"><img :src=sp2 alt="Szkoła Podstawowa nr 2 w Kwidzynie" /></a>
           </div>
         </p>
       </div>
