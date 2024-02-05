@@ -1,14 +1,11 @@
 <script setup>
-import company from '../images/obsługa-informatyczna-firm.webp';
-import computer from '../images/naprawa-komputerów.webp';
-import recovery from '../images/odzyskiwanie-danych.webp';
-import service from '../images/doradztwo.webp';
+import company from '../images/handshake.png';
 
 const servicesList = [
   {name: "Obsługa informatyczna firm", img: company},
-  {name: "Naprawa komputerów i laptopów", img: computer},
-  {name: "Odzyskiwanie danych", img: recovery},
-  {name: "Doradztwo w zakresie informatyki", img: service},
+  {name: "Serwis urządzeń", img: company},
+  {name: "Systemy alarmowe", img: company},
+  {name: "Sprzedaż elektroniki", img: company},
 ];
 </script>
 
@@ -18,7 +15,7 @@ const servicesList = [
     <ul class="section-content">
       <li class="card" v-for="service in servicesList" data-aos="zoom-in-up">
         <img :src=service.img alt="" />
-        <p>{{service.name}}</p>
+        <h3>{{service.name}}</h3>
       </li>
     </ul>
   </section>
@@ -27,33 +24,38 @@ const servicesList = [
 <style scoped>
 ul {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 50px 30px;
-  text-align: center;
   list-style: none;
 }
 
 .card {
   display: flex;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
-  justify-content: end;
-  flex-grow: 1;
-  border: 1px #3f35971c solid;
-  box-shadow: 0px 2px 6px 2px #30287b24;
-  /* background-color: #f4f4ff; */
+  gap: 20px;
+  border-left: 2px solid var(--orange);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 100px;
+  background-color: #f3f3fa;
 
   img {
-    width: 80vw;
-    max-width: 300px;
-    margin: auto;
-    padding: 20px;
-    transition: 0.5s;
+    background-color: var(--orange);
+    max-width: 80px;
+    padding: 10px;
+    border-radius: 50px;
   }
 
-  p {
-    padding: 20px;
-    color: white;
-    background-color: var(--purple);
+  h3 {
+    font-weight: 500;
   }
-}
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.5s;
+}}
 </style>
