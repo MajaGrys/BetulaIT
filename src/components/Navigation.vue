@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-import computer from '../images/komputer.webp';
-import menu from '../images/menu.svg';
+import logo from '../images/betula-logo.jpg';
+import menu from '../images/icon-menu.svg';
 
 const navLinks = [
   {url: '#home', name: 'Strona główna'},
@@ -21,7 +21,7 @@ window.addEventListener('resize', () => { if (window.innerWidth > 695) { navOpen
 
 <template>
   <nav>
-    <a href="#home" id="logo"><img :src=computer alt="" />Betula IT</a>
+    <a href="#home" id="logo"><img :src=logo alt="" /></a>
     <div class="nav-links" :class="{mobile: navOpened}" @click="mobileNavToggle">
       <a v-for="link in navLinks" :href=link.url>{{link.name}}</a>
     </div>
@@ -42,25 +42,9 @@ nav {
   box-shadow: 0px 1px 10px #41414141;
 }
 
-#logo {
-  padding: 10.5px 20px;
-  font-size: 2.5rem;
-  font-family: var(--logo-font);
-  color: var(--orange);
-  text-decoration: none;
-
-  img {
-    height: 40px;
-    width: 40px;
-    margin-right: 5px;
-    transform: translateY(2px);
-  }
-}
-
-@media screen and (max-width: 290px) {
-  #logo img {
-    display: none;
-  }
+#logo img {
+  height: 60px;
+  margin-left: 20px;
 }
 
 .nav-links {
@@ -68,13 +52,13 @@ nav {
 
   a {
     padding: 29px 20px;
-    color: var(--black);
+    color: var(--font-color);
     text-decoration: none;
-    transition: 0.5s;
+    transition: var(--transition);
 
     &:hover, &:focus {
       color: white;
-      background-color: var(--orange);
+      background-color: var(--primary);
     }
   }
 }
@@ -82,13 +66,12 @@ nav {
 .menu-btn {
   margin-right: 20px;
   padding: 8px;
-  background-color: var(--orange);
+  background-color: var(--primary);
   border: none;
-  border-radius: 15px;
-  transition: 0.5s;
+  border-radius: 10px;
+  transition: var(--transition);
 
   &:hover, &:focus {
-    background-color: var(--orange-light);
     transform: scale(1.1);
   }
 
@@ -99,7 +82,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 695px) {
+@media screen and (min-width: 700px) {
   .menu-btn {
     display: none;
   }
@@ -109,7 +92,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 695px) {
+@media screen and (max-width: 700px) {
   .mobile {
     position: fixed;
     top: 80px;
