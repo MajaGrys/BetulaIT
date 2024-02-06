@@ -29,13 +29,14 @@ AOS.init({
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
 
 :root {
-  --background:#F8F8FF;
-  --purple: #4c4494;
-  --orange: #CD470A;
-  --orange-light: #f27a35;
-  --black: #2b2928;
+  --background:#191923;
+  --background-light: #2b2b39;
+  --font-color: #ffffff;
+  --primary: #006CF0;
   --main-font: 'Montserrat', sans-serif;
   --logo-font: 'Bebas Neue', sans-serif;
+  --transition: 0.5s;
+  --radius: 20px;
 }
 
 *, *::before, *::after {
@@ -47,14 +48,14 @@ AOS.init({
 html {
   background-color: var(--background);
   font-family: var(--main-font);
+  color: var(--font-color);
   font-size: large;
-  color: var(--black);
   scroll-behavior: smooth;
   cursor: default;
 }
 
 .section-content {
-  max-width: 80vw;
+  max-width: 70vw;
   margin: auto;
 }
 
@@ -71,7 +72,7 @@ h2::before, h2::after {
   max-width: 160px;
   height: 3px;
   margin: 15px 10px;
-  background-color: var(--orange-light);
+  background-color: var(--primary);
 }
   
 @media screen and (min-width: 400px) {
