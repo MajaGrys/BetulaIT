@@ -1,7 +1,7 @@
 <script setup>
-import email from '../images/mail.svg';
-import phone from '../images/phone.svg';
-import location from '../images/map-pin.svg';
+import email from '../images/icon-mail.svg';
+import phone from '../images/icon-phone.svg';
+import location from '../images/icon-map-pin.svg';
 </script>
 
 <template>
@@ -32,24 +32,19 @@ import location from '../images/map-pin.svg';
 </template>
 
 <style scoped>
-section {
-    background-color: var(--purple);
-    color: white;
-}
-
 .section-content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px 50px;
     line-height: 2.5;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-bottom: 80px;
 }
 
 iframe {
     border: none;
-    border-radius: 10px;
+    border-radius: var(--radius);
     width: 90vw;
     height: 50vh;
     max-width: 500px;
@@ -76,6 +71,6 @@ img {
 a {
     color: white;
     text-decoration: none;
-    transition: 0.5s;
+    transition: var(--transition);
 }
 </style>

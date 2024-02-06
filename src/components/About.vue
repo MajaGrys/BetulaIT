@@ -1,8 +1,8 @@
 <script setup>
 import building from '../images/betulait.webp';
 import ziarnpol from '../images/ziarnpol.webp';
-import sebteam from '../images/seb-team.webp';
-import kalinabhp from '../images/kalina-bhp.png';
+import sebteam from '../images/sebteam.webp';
+import kalinabhp from '../images/kalinabhp.png';
 import sp2 from '../images/sp2.png';
 </script>
 
@@ -27,6 +27,10 @@ import sp2 from '../images/sp2.png';
 </template>
 
 <style scoped>
+section {
+  background-color: var(--background-light);
+}
+
 .section-content {
   display: flex;
   justify-content: center;
@@ -36,18 +40,13 @@ import sp2 from '../images/sp2.png';
   line-height: 1.5;
   padding-bottom: 40px;
 }
-
-#about-logo {
-  color: var(--orange);
-  font-weight: 600;
-}
-
 .building {
   width: 80vw;
   height: 80vw;
   max-width: 400px;
   max-height: 400px;
   box-shadow: 0px 0px 5px #30287b51;
+  border-radius: var(--radius);
 }
 
 .logos {
@@ -60,11 +59,11 @@ import sp2 from '../images/sp2.png';
   img {
     max-width: 200px;
     max-height: 100px;
-    transition: 0.5s;
+    transition: var(--transition);
     
-    &:hover {
+    &:hover, &:focus {
       transform: scale(1.1);
-      transition: 0.5s;
+      transition: var(--transition);
     }
   }
 }

@@ -1,5 +1,5 @@
 <script setup>
-import arrow from '../images/arrow-right-circle.svg';
+import arrow from '../images/icon-arrow.svg';
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import arrow from '../images/arrow-right-circle.svg';
 <style scoped>
 section {
   height: 100vh;
-  background: url('../images/motherboard-885177.webp') center no-repeat;
+  background: url('../images/computer.jpg') center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -23,14 +23,7 @@ section {
 h1 {
   text-align: center;
   padding: 20px 20px 50px 20px;
-  font-size: 1.5rem;
-  color: white;
-}
-
-@media (min-width: 300px) {
-  h1 {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
 }
 
 @media (min-width: 430px) {
@@ -47,11 +40,11 @@ h1 {
 
 .btn {
   color: white;
-  background-color: var(--orange);
+  background-color: var(--primary);
   padding: 15px 20px 20px 20px;
   border-radius: 30px;
   text-decoration: none;
-  transition: 0.5s;
+  transition: var(--transition);
 
   &:hover, &:focus {
     transform: scale(1.1);
