@@ -8,9 +8,7 @@ import Contact from './components/Contact.vue';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 AOS.init({
-  delay: 200,
   duration: 1000,
-  // once: true,
 });
 </script>
 
